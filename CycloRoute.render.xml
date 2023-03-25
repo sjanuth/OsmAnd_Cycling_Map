@@ -978,7 +978,7 @@
 				<case minzoom="18" textSize="18"/>
 			</apply>
 		</switch>
-		<case maxzoom="19" tag="landuse" value="cemetery" textColor="$black" textHaloRadius="$textHaloRadius"/>
+		<!-- <case maxzoom="19" tag="landuse" value="cemetery" textColor="$black" textHaloRadius="$textHaloRadius"/> -->
 
 		<switch>
 			<case minzoom="10" tag="route" value="segment" nameTag="" textMinDistance="60" textOnPath="true" textSize="15" textColor="#0078ff" textHaloColor="#ccebf4ff" textHaloRadius="1" textOrder="2"/>
@@ -1044,11 +1044,11 @@
 			<!-- Bicycle profile priority icons -->
 			<switch iconOrder="80">
 				<switch>
-				<switch minzoom="15">
-					<case tag="amenity" value="hospital" icon="amenity_hospital" iconVisibleSize="26" shield="red_round_shield" iconOrder="79"/>
-					<apply_if nightMode="true" shield="red_round_night_shield" iconVisibleSize="24"/>
-					<apply_if moreDetailed="false" maxzoom="15" icon=""/>
-				</switch>
+				<!-- <switch minzoom="15"> -->
+				<!-- 	<case tag="amenity" value="hospital" icon="amenity_hospital" iconVisibleSize="26" shield="red_round_shield" iconOrder="79"/> -->
+				<!-- 	<apply_if nightMode="true" shield="red_round_night_shield" iconVisibleSize="24"/> -->
+				<!-- 	<apply_if moreDetailed="false" maxzoom="15" icon=""/> -->
+				<!-- </switch> -->
 				<switch POIcyclotouring="true" shield="red_round_shield" minzoom="16" iconVisibleSize="26">
 					<case tag="emergency" value="phone" icon="emergency_phone"/>
 					<case minzoom="18" tag="emergency" value="defibrillator" icon="defibrillator"/>
@@ -1129,7 +1129,7 @@
 				</case>
 				<case minzoom="16" tag="natural" value="arch" icon="arch" shield="arch_shield"/>
 				<switch>
-				  <case minzoom="14" tag="landuse" value="cemetery" icon="grave"/>
+				  <!-- <case minzoom="14" tag="landuse" value="cemetery" icon="grave"/> -->
 					<case minzoom="15" tag="natural" value="cave_entrance" icon="natural_cave_entrance" iconOrder="85"/>
 					<case minzoom="16" tag="man_made" value="adit" icon="man_made_adit" iconOrder="60"/>
 					<case minzoom="17" tag="man_made" value="cellar_entrance" icon="cellar_entrance" iconOrder="60"/>
@@ -1228,7 +1228,7 @@
 						</apply_if>
 					</switch>
 					<switch >
-						<case minzoom="16" tag="amenity" value="bicycle_rental" icon="amenity_bicycle_rental" iconOrder="90" shield="blue_round_small_shield"/>
+						<!-- <case minzoom="16" tag="amenity" value="bicycle_rental" icon="amenity_bicycle_rental" iconOrder="90" shield="blue_round_small_shield"/> -->
 						<case minzoom="16" tag="amenity" value="bicycle_parking" icon="osmc_blue_dot" iconOrder="90">
 							<case additional="bicycle_parking=stands"/>
 							<case additional="bicycle_parking=wall_loops"/>
@@ -1337,13 +1337,13 @@
 			<groupFilter nightMode="true" color_2="$shadowColorNight"/>
 		</group>
 		
-    <case minzoom="12" tag="landuse" value="cemetery" shader="topo_cemetery_small" color_0="$cemeteryColor">
-      <case minzoom="15" shader="topo_cemetery">
-        <apply_if additional="religion=christian" shader="cemetery_christian_2"/>
-        <apply_if additional="religion=muslim" shader="cemetery_muslim_2"/>
-        <apply_if additional="religion=jewish" shader="cemetery_jewish_2"/>
-      </case>
-    </case>
+    <!-- <case minzoom="12" tag="landuse" value="cemetery" shader="topo_cemetery_small" color_0="$cemeteryColor"> -->
+    <!--   <case minzoom="15" shader="topo_cemetery"> -->
+    <!--     <apply_if additional="religion=christian" shader="cemetery_christian_2"/> -->
+    <!--     <apply_if additional="religion=muslim" shader="cemetery_muslim_2"/> -->
+    <!--     <apply_if additional="religion=jewish" shader="cemetery_jewish_2"/> -->
+    <!--   </case> -->
+    <!-- </case> -->
 		
 		<!--SHADER-->
 		
